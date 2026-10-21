@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">          
+<tiles-definitions>  
+ 
+    <!-- Base Define -->
+    <definition name="base.definition" template="/WEB-INF/layouts/layout.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="header" value="/WEB-INF/basefragments/header.jsp" />  
+        <put-attribute name="body" value="" />  
+        <put-attribute name="footer" value="/WEB-INF/basefragments/footer.jsp" />  
+    </definition>  
+ 
+ 	<!-- Home Page  -->
+    <definition name="home" extends="base.definition">  
+        <put-attribute name="title" value="Home" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/home.jsp" />  
+    </definition>   
+    
+     	<!-- Registration Page  -->
+    <definition name="registration" extends="base.definition">  
+        <put-attribute name="title" value="Registration" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/registration.jsp" />  
+    </definition>  
+       
+         <!-- Login Page  -->
+    <definition name="login" extends="base.definition">  
+        <put-attribute name="title" value="Login" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/login.jsp" />  
+    </definition> 
+    
+     
+    <!-- User List View  -->
+    <definition name="userlist" extends="base.definition">  
+        <put-attribute name="title" value="User View List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/userlistview.jsp" />  
+    </definition> 
+     
+          <!-- Package Page  -->
+    <definition name="package" extends="base.definition">  
+        <put-attribute name="title" value="package" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/packageview.jsp" />  
+    </definition> 
+    
+     
+    <!-- Package List View  -->
+    <definition name="packagelist" extends="base.definition">  
+        <put-attribute name="title" value="packagelist" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/packagelistview.jsp" />  
+    </definition> 
+    
+            <!-- Booking Page  -->
+    <definition name="booking" extends="base.definition">  
+        <put-attribute name="title" value="booking" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/bookingview.jsp" />  
+    </definition> 
+    
+     
+    <!-- Package List View  -->
+    <definition name="bookinglist" extends="base.definition">  
+        <put-attribute name="title" value="bookinglist" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/bookinglistview.jsp" />  
+    </definition>
+       
+       
+           <!-- Payment View  -->
+    <definition name="payment" extends="base.definition">  
+        <put-attribute name="title" value="Payment View" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/paymentview.jsp" />  
+    </definition> 
+    
+      <!-- Payment List View  -->
+    <definition name="paymentlist" extends="base.definition">  
+        <put-attribute name="title" value="Payment View List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/paymentlistview.jsp" />  
+    </definition>
+     
+    
+    
+   
+</tiles-definitions> 
